@@ -1,0 +1,44 @@
+<h1>
+  Excel to JSON to XML convertor
+</h1>
+<div>
+  <label for="">Select an .xlsx file to get json</label>
+  <br>
+  <input type="file" (change)="handleFile($event)" />
+</div>
+
+<div class="result-container">
+  <h2>
+    Result :
+    <br>
+  </h2>
+</div>
+
+<br />
+<div *ngIf="newJSON.length>0">
+  <h3> JSON: </h3>{{newJSON}}</div>
+<!--{{jsonData}}-->
+<!--</div>-->
+<!--<h3 *ngIf="jsonData">HTML: </h3>-->
+
+
+
+<!--<div>
+  <div *ngFor="let value of result[1]">
+    <div class="col-md-12 row">
+      <div *ngIf="(value.Type)" class="col-md-6">
+        <label>{{value.Label}}</label>
+      </div>
+      <div *ngIf="(value.Type)" class="col-md-6">
+        <input type="text" name="value.Name" placeholder="{{value.Type}}"><br>
+      </div>
+    </div>
+
+  </div>
+</div>-->
+<h3 *ngIf="xmlData">XML: </h3>
+{{xmlData}}
+
+<!--<h3 *ngIf="xmlData">HTML: </h3>-->
+<!--<dl>
+</dl>-->
